@@ -1,3 +1,13 @@
 .custom-style {
-    height: 560px;
+    height: 500px;
+}
+
+.custom-btn1 {
+    border-radius: 0 0 0 5px;
+    border-right: 1px solid gray;
+}
+
+.custom-btn2 {
+    border-radius: 0 0 5px 0;
+    border-left: 1px solid gray;
 }
