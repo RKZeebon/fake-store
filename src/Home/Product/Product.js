@@ -19,8 +19,8 @@ const Product = ({ addToCart, product }) => {
                 <p className='leading-8 text-lg'><span className='font-bold'>Category:</span> {category}</p>
                 <p className='leading-8 text-xl font-bold'>Price: ${price}</p>
                 <div className=' absolute bottom-2 right-2 left-2 flex justify-center'>
-                    <button onClick={() => navigate(`/product/${id}`)} className='w-1/2 bg-black text-white py-2 px-4 text-lg font-medium custom-btn1'>Details</button>
-                    <button className='w-1/2 bg-black text-white py-2 px-4 text-lg font-medium custom-btn2' onClick={() => addToCart(product)}>Add to Cart</button>
+                    <button onClick={() => navigate(`/product/${id}`)} className='w-1/2 bg-black text-white py-2 px-4 text-lg font-medium custom-btn1 hover:bg-gray-800'>Details</button>
+                    <button className='w-1/2 bg-black text-white py-2 px-4 text-lg font-medium custom-btn2 hover:bg-gray-800' onClick={() => addToCart(product)}>Add to Cart</button>
                 </div>
 
             </div>

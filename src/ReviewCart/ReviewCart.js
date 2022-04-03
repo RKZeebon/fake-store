@@ -9,7 +9,7 @@ const ReviewCart = () => {
     const [selectedProducts] = useCart(products)
 
     return (
-        <div className='flex items-start px-4'>
+        <div className={`flex items-start px-4`} >
             <button onClick={() => navigate(-1)} className='text-xl font-bold mt-4 mr-4 bg-black text-white py-2 px-4 rounded' > ❮ Back</button>
 
             <div className='mx-auto w-3/4'>
@@ -20,7 +20,7 @@ const ReviewCart = () => {
                     ></Cart>)
                 }
             </div>
-        </div>
+        </div >
     );
 };
 
