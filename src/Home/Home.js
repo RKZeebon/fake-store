@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ProductsContext } from '../App';
 import useCart from '../Hooks/Cart';
-import useProducts from '../Hooks/Products';
+
 import ShortCart from '../ShortCart/ShortCart';
 import { addToLocalStorage, clearLocalStorage, updateLocalStorage } from '../Utilities/Utilities';
 import Product from './Product/Product';
 
 const Home = () => {
-    const [products] = useProducts()
+    const [products] = useContext(ProductsContext)
+
     const [selectedProducts, setSelectedProducts] = useCart(products)
     const [reviewBtn, setReviewBtn] = useState(false)
     const navigate = useNavigate();
