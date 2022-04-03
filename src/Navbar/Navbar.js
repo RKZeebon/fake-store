@@ -18,13 +18,13 @@ const Navbar = () => {
             </div>
 
             <div className={`nav-links md:flex ${open ? 'top-14 absolute right-0 z-50 text-center h-full bg-black' : 'right-[-250px] hidden'}`}>
-                <div onClick={() => setOpen(!open)} className='my-2'>
+                <div onClick={() => setOpen(false)} className='my-2'>
                     <Link className='mx-4 px-4 rounded font-medium py-2 text-lg' to="/home">Home</Link>
                 </div>
-                <div onClick={() => setOpen(!open)} className='my-2'>
+                <div onClick={() => setOpen(false)} className='my-2'>
                     <Link className='mx-4 px-4 rounded font-medium py-2 text-lg' to="/reviewcart">Review Cart</Link>
                 </div>
-                <div onClick={() => setOpen(!open)} className='my-2'>
+                <div onClick={() => setOpen(false)} className='my-2'>
                     <Link className='mx-4 px-4 rounded font-medium py-2 text-lg' to="/about">About</Link>
                 </div>
             </div>
